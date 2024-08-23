@@ -1,0 +1,714 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            red1: '#ea1b25',
+            nav: '#0f233c',
+            maindiv: '#f6f6f6',
+            gray1: '#6b7280',
+            wsome: 'rgba(255, 255, 255, 0.3)',
+            catgo: '#f7f7f7'
+          },
+          scale: {
+        '125': '1.1',
+      }
+        }
+      }
+    }
+  </script>
+  <!-- google font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+<style>
+.hey::after{
+    content: "";
+    border-width: 4px;
+    border-style: solid;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-color:  #ea1b25 transparent transparent #ea1b25 ;
+  /* 
+  
+  
+  
+ 
+  margin-left: -5px;
+   */
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="w-[80%] mx-auto ">
+      <div class="flex py-3">
+        <div class="px-3 flex items-center space-x-4 border-r border-gray-300">
+          <img src="./icon/van-svgrepo-com.svg" alt="" width="20px">
+          <p class="capitalize text-sm">free delivery</p>
+        </div>
+
+        <div class="px-3 flex items-center space-x-4 border-r border-gray-400">
+          <img src="./icon/earth-north-o-svgrepo-com.svg" alt="" width="15px">
+          <p class="capitalize text-sm">free delivery</p>
+        </div>
+        <div class="px-3 flex items-center space-x-4 ">
+          <p class="capitalize text-sm">follow us</p>
+
+          <img src="./icon/facebook-176-svgrepo-com.svg" alt="" width="15px">
+          <img src="./icon/twitter-154-svgrepo-com.svg" alt="" width="15px">
+          <img src="./icon/instagram-svgrepo-com.svg" alt="" width="15px">
+          <img src="./icon/pinterest-svgrepo-com.svg" alt="" width="15px">
+        </div>
+
+      </div>
+    </div>
+  <!-- navbar -->
+
+    <nav class="bg-nav flex justify-between items-center py-[25px] px-[90px]" id="top">
+      <!-- logo -->
+      <div class="pl-5">
+        <a href="">
+          <img src="./img/home_logo.png" alt="" width="190px">
+        </a>
+      </div>
+      <!-- menu -->
+      <div class=" pl-6 flex items-center bg-white rounded-md ">
+        <input type="text" placeholder="find your product" class="px-[90px] outline-none">
+        <p class="flex items-center space-x-7 mr-2">
+          <span>All Categories</span> 
+          <img src="./icon/arrow-down-svgrepo-com.svg" alt="" width="20px">
+        </p>
+        <button class="bg-red1 hover:bg-[#65a30d] p-4 rounded-r-md">
+          <img src="./icon/search-svgrepo-com.svg" alt="" width="20px">
+        </button>
+      </div>
+      <!-- love and shopping -->
+      <div class="flex  space-x-2">
+        <div class="relative flex">
+          <span>
+            <img src="./icon/love-shapes-svgrepo-com.svg" 
+            alt="" width="40px">
+          </span>
+          <span class="absolute top-[-10px] right-[-10px] bg-white w-[25px] rounded-[50%] text-center">0</span>
+        </div>
+        <!-- shopping bag -->
+        <div class="relative flex">
+          <span>
+            <img src="./icon/shopping-bag-svgrepo-com.svg" 
+            alt="" width="45px">
+          </span>
+          <span class="absolute top-[-5px] right-[-5px] bg-red1 w-[25px] text-white rounded-[50%] text-center border-2">0</span>
+        </div>
+      </div>
+    </nav>
+    <!-- dropdown menu -->
+     <div class="px-[100px] justify-between flex py-4 text-black bg-white shadow-lg mb-2">
+
+      <p class="flex items-center space-x-7 mr-2 bg-[#eaeaea] px-7 rounded-md ">
+        <img src="./icon/menudot-svgrepo-com.svg" alt="" width="20px">
+        <span class="font-medium">All Categories</span> 
+        <img src="./icon/arrow-down-svgrepo-com.svg" alt="" width="40px">
+      </p>
+
+      <div class="flex space-x-7">
+
+        <div class="relative flex">
+          <p class="flex items-center space-x-2 mr-2 "> 
+            <span class="font-medium">Home</span> 
+            <img src="./icon/arrow-down-svgrepo-com.svg" alt="" width="20px">
+          </p>
+        
+        </div>
+
+        <div class="group relative  flex justify-center">
+          <div class="relative flex ">
+            <p class=" flex items-center space-x-2 mr-2 "> 
+              <span class="font-medium ">pages</span> 
+              <img src="./icon/arrow-down-svgrepo-com.svg" alt="" width="20px">
+            </p>
+          </div>
+          <ol class="group-hover:visible invisible absolute left-[-50px]  bottom-[-90px] bg-white w-[200px] shadow ">
+              <li class="border-b py-3 "><a href="aboutus.html" class="hover:text-blue-400">about Us</a></li>
+              <li class="py-3"><a href="contactUs.html" class="hover:text-blue-400">Contact</a></li>
+            </ol>
+          </div>
+
+        <div class="relative flex">
+          <p class="flex items-center space-x-2 mr-2 "> 
+            <span class="font-medium">Shop</span> 
+            <img src="./icon/arrow-down-svgrepo-com.svg" alt="" width="20px">
+          </p>
+          <span class=" hey absolute top-[-10px] left-[10px] bg-red1  text-white font-bold text-[11px] px-3 py-1">NEW</span>
+        </div>
+
+        <div class="relative flex">
+          <p class="flex items-center space-x-2 mr-2 "> 
+            <span class="font-medium">Blog</span> 
+            <img src="./icon/arrow-down-svgrepo-com.svg" alt="" width="20px">
+          </p>
+        </div>
+
+        <div class="relative flex">
+          <p class="flex items-center space-x-2 mr-2 "> 
+            <span class="font-medium">Gallery</span> 
+            <img src="./icon/arrow-down-svgrepo-com.svg" alt="" width="20px">
+          </p>
+          <span class=" hey absolute top-[-10px] left-[10px] bg-red1  text-white font-bold text-[11px] px-3 py-1">HOT</span>
+        </div>
+
+
+
+        
+
+
+
+
+        <button class="mt-1 bg-red1 text-white py-2 px-16 rounded-[4px] hover:bg-black uppercase font-medium text-[12px]">
+          <h1 class="font-medium text-lg">black friday</h1>
+        <p>get 45% off</p>
+      </button>
+      </div>
+
+     </div>
+
+  </header>
+<!-- main -->
+ <main>
+  <!-- 1st -->
+   <div class="bg-maindiv grid grid-cols-2 px-[50px] items-center  h-[600px] ani-boxes">
+    <div>
+  <h1 class="font-extrabold text-6xl uppercase italic  mb-10 ">get all <span class="text-red1">original auto</span> parts</h1>
+  <p class="font-bold text-xl mb-10 text-gray1">we have all your auto part needs! are you looking for the best performance car parts and car parts and car accessories</p>
+  <button class="mt-1 bg-red1 text-white py-3 px-7 rounded-sm hover:bg-white hover:text-black">view collection</button>
+    </div>
+
+    <div>
+  <img src="./img/banner_img1-min-1.png" alt="" width="480px">
+    </div>
+   </div>
+   <!-- 50% off -->
+
+    <div class="my-[90px] px-[90px] grid grid-cols-3 gap-6 auto-rows-[280px] ">
+
+      <div class="bg-cover bg-no-repeat bg-[url('./img/1.jpg')] p-7 rounded-md bg-right ">
+        <div class="py-7">
+          <p class="text-2xl text-gray1 capitalize">Get 50% off</p>
+          <h1 class="font-bold text-2xl my-4 capitalize text-black">every hydrolic break item</h1>
+          <button class="mt-1 bg-red1 text-white py-3 px-6 rounded-[4px] hover:bg-black uppercase font-medium text-[12px]">go shop</button>
+        </div>
+      </div>
+
+      <div class="bg-cover bg-no-repeat bg-[url('./img/2.jpg')] p-7 rounded-md bg-right ">
+        <div class="py-7 text-white">
+          <p class="text-2xl  capitalize">feel better</p>
+          <div class="my-4">
+            <h1 class="font-bold text-2xl capitalize ">drive easy</h1>
+          <h1 class="font-medium text-2xl">From $50</h1>
+          </div>
+          <button class="mt-1 bg-red-800 text-white py-3 px-6 rounded-[4px] hover:bg-black uppercase font-medium text-[12px]">go shop</button>
+        </div>
+      </div>
+
+      <div class="bg-cover bg-no-repeat bg-[url('./img/3.jpg')] p-7 rounded-md bg-right ">
+        <div class="py-7 text-white">
+          <p class="text-2xl  capitalize text-red1">get 50% off </p>
+          <div class="my-4">
+            <h1 class="font-bold text-2xl capitalize ">every</h1>
+            <h1 class="font-bold text-2xl capitalize ">hydrolic</h1>
+            <h1 class="font-bold text-2xl capitalize ">break item</h1>
+          </div>
+          <button class="mt-1 bg-red1 text-white py-3 px-6 rounded-[4px] hover:bg-black uppercase font-medium text-[12px]">go shop</button>
+        </div>
+      </div>
+
+   </div>
+   
+   <!-- daily deals -->
+    <div class="px-[90px] mb-[90px] flex gap-5">
+      <!-- left side -->
+      <div class="w-[31%] border-2 border-red1 pb-[30px] rounded-sm">
+        <!-- red box -->
+        <div class="py-3 px-5 bg-red1  h-[70px]">
+          <div class="flex bg-red1 justify-between">
+            <h1 class="text-white font-medium text-lg">Deals of the week</h1>
+            <div class="flex">
+              <img src="./icon/arrow-prev-svgrepo-com.svg" alt="" width="30px">
+              <img src="./icon/arrow-prev-svgrepo-com (1).svg" alt="" width="30px">
+            </div>
+          </div>
+        </div>
+        <!-- tire place -->
+         
+        <div class="group mt-4 flex flex-col items-center">
+          <div class=" relative">
+            <img src="./img/2-min-300x300.png" alt="" width="250px">
+            <div class="absolute top-0 left-0 w-[100%] h-full transition ease-in duration-300 group-hover:bg-wsome"></div>
+          </div>
+          <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+          <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+          <div class="flex space-x-2 mb-3">
+            <span class="text-gray-700 text-[12px] font-bold">already sold:4</span>
+            <span class="text-gray-700 text-[12px] font-bold">Available:36</span>
+            <p class="bg-red1 text-white w-[70px] h-[70px] rounded-[50%] flex flex-col justify-center items-center"> <span class="font-bold text-xl">40%</span>
+          <span>Offer</span></p>
+          </div>
+          
+          <div class="bg-gray-200 h-[10px] w-[70%] rounded-2xl"></div>
+
+          <h1 class="mt-3 text-black text-2xl font-bold"><span class="text-red1">Hurry up!</span> Offers end in:</h1>
+
+          <hr class="my-5 bg-gray-200 w-[80%] h-[1px]">
+
+          <div class="flex">
+            <div class="flex flex-col items-center">
+              <p class="w-[50px] h-[50px] rounded-[50%] bg-[#f5f5f5] grid place-items-center text-black">0</p>
+              <p class="uppercase text-[10px] font-medium">days</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <p class="w-[50px] h-[50px] rounded-[50%] bg-[#f5f5f5] grid place-items-center text-black">00</p>
+              <p class="uppercase text-[10px] font-medium">hours</p>
+            </div>
+            
+            <div class="flex flex-col items-center">
+              <p class="w-[50px] h-[50px] rounded-[50%] bg-[#f5f5f5] grid place-items-center text-black">00</p>
+              <p class="uppercase text-[10px] font-medium">minutes</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <p class="w-[50px] h-[50px] rounded-[50%] bg-[#f5f5f5] grid place-items-center text-black">00</p>
+              <p class="uppercase text-[10px] font-medium">seconds</p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <!-- right side -->
+      <div class="w-[69%] ">
+        <div class=" flex justify-between pb-2 border-b">
+          <h1 class="font-medium text-2xl text-black">Daily Deals! Get our best prices.</h1>
+          <div class="flex">
+            <p class="text-gray-400 font-medium text-xl hover:text-red1 something">30% Offer</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 mt-5 auto-rows-[300px] gap-y-4">
+
+          <div class="flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+            <img src="./img/1-min.png" alt="" width="200px">
+            <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+          <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+          <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+          </div>
+
+          <div class="flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+            <img src="./img/2-min-300x300.png" alt="" width="180px">
+            <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+          <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+          <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+          </div>
+
+          <div class="flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+            <img src="./img/3-min-300x300.png" alt="" width="200px">
+            <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+          <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+          <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+          </div>
+
+          <div class="flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+            <img src="./img/4-min-1-300x300.png" alt="" width="200px">
+            <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+          <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+          <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+          </div>
+
+          <div class="flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+            <img src="./img/5-min-300x300.png" alt="" width="200px">
+            <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+          <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+          <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+          </div>
+
+          <div class="flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+            <img src="./img/6-min-300x300.jpg" alt="" width="200px">
+            <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+          <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+          <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- free delivery -->
+     <div class="px-[90px] grid grid-cols-5">
+
+      <div class="flex space-x-2 border p-6 ">
+        <div>
+          <img src="./icon/car-svgrepo-com.svg" alt="" width="40px">
+        </div>
+        <div>
+          <h1 class="font-bold capitalize">free delivery</h1>
+          <p class="font-medium text-gray-700">from $78</p>
+        </div>
+      </div>
+
+      
+
+      <div class="flex space-x-2 border p-6">
+        <div>
+          <img src="./icon/group-team-svgrepo-com.svg" alt="" width="40px">
+        </div>
+        <div>
+          <h1 class="font-bold capitalize">free delivery</h1>
+          <p class="font-medium text-gray-700">from $78</p>
+        </div>
+      </div>
+
+      <div class="flex space-x-2 border p-6">
+        <div>
+          <img src="./icon/curved-arrow-svgrepo-com.svg" alt="" width="40px">
+        </div>
+        <div>
+          <h1 class="font-bold capitalize">free delivery</h1>
+          <p class="font-medium text-gray-700">from $78</p>
+        </div>
+      </div>
+
+      <div class="flex space-x-2 border p-6">
+        <div>
+          <img src="./icon/rich-currency-svgrepo-com.svg" alt="" width="40px">
+        </div>
+        <div>
+          <h1 class="font-bold capitalize">free delivery</h1>
+          <p class="font-medium text-gray-700">from $78</p>
+        </div>
+      </div>
+
+      <div class="flex space-x-2 border p-6">
+        <div>
+          <img src="./icon/headset-svgrepo-com.svg" alt="" width="40px">
+        </div>
+        <div>
+          <h1 class="font-bold capitalize">free delivery</h1>
+          <p class="font-medium text-gray-700">from $78</p>
+        </div>
+      </div>
+     </div>
+<!-- hydraulic -->
+ <div class="mx-[93px] my-[80px] bg-gradient-to-r from-[#d72867] to-[#f7f0d6] grid grid-cols-2 grid grid-col-2 px-[90px] h-[350px]">
+
+  <div>
+    <img src="./img/3-min.png" alt="" width="400px" class="mt-[-45px]">
+  </div>
+  <div class="p-[40px] ">
+    <p class="text-xl text-red1">get 50% off</p>
+    <h1 class="font-bold text-5xl text-black">hydraulic dicks</h1>
+    <button class="mt-[50px] bg-red1 text-white py-3 px-6 rounded-[4px] hover:bg-black uppercase font-medium text-[12px]">go shop</button>
+  </div>
+ </div>
+ <!-- category -->
+  <div class="px-[90px] mb-10">
+    <h1 class="font-bold text-4xl">top categories this week</h1>
+    <div class=" mt-10 grid grid-cols-4 grid-rows-2 gap-7 ">
+
+      <div class="group border relative  p-10 col-span-2 row-span-2 ">
+        <img src="./img/1-min.png" alt="" class="group-hover:scale-125 transition ease-in duration-500  ">
+        <div class="absolute top-10 right-10 text-right ">
+          <p class=" text-red1 capitalize">accesories hero brakes</p>
+          <h1 class=" font-bold text-3xl capitalize hover:text-blue-900">lotary extension arm</h1>
+        </div>
+        <div class="w-[70px] h-[70px] rounded-[50%] bg-red1 flex flex-col justify-center items-center absolute top-[360px]">
+          <span class="text-white font-bold text-xl">6%</span>
+          <small class="text-white ">offer</small>
+        </div>
+      </div>
+
+      <div class="group bg-catgo relative ">
+        <img src="./img/4-min-1-300x300.png" alt="" width="200px" class="group-hover:scale-125 transition ease-in duration-500 mt-[80px] float-right">
+        <div class="absolute top-3 right-5 text-right">
+          <p class=" text-red1 capitalize">accesories tire drid</p>
+          <h1 class=" font-bold text-xl capitalize hover:text-blue-900">kilt techno 2.0</h1>
+        </div>
+      </div>
+
+      <div class="group bg-catgo relative ">
+        <img src="./img/2-min-300x300.png" alt="" width="200px" class="group-hover:scale-125 transition ease-in duration-500 mt-[80px] float-right">
+        <div class="absolute top-3 right-5 text-right">
+          <p class=" text-red1 capitalize">accesories racing motorcycle</p>
+          <h1 class=" font-bold text-xl capitalize hover:text-blue-900">ghoei terminus RF</h1>
+        </div>
+      </div>
+
+      <div class="group bg-catgo relative ">
+        <img src="./img/3-min-300x300.png" alt="" width="200px" class="group-hover:scale-125 transition ease-in duration-500 mt-[80px] float-right">
+        <div class="absolute top-3 right-5 text-right">
+          <p class=" text-red1 capitalize">accesories hydraulic disks</p>
+          <h1 class=" font-bold text-xl capitalize hover:text-blue-900">kinlock pins CwR</h1>
+        </div>
+      </div>
+
+      <div class="group relative bg-catgo">
+        <img src="./img/5-min-300x300.png" alt="" width="200px" class="group-hover:scale-125 transition ease-in duration-500 mt-[80px] float-right">
+        <div class="absolute top-3 right-5 text-right">
+          <p class=" text-red1 capitalize">accesories xpeed wheel</p>
+          <h1 class=" font-bold text-xl capitalize hover:text-blue-900">koneal commander</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- recently -->
+<div class="w-[80%] mx-auto mb-[50px]">
+  <div class=" flex justify-between pb-2 border-b">
+    <h1 class="font-medium text-2xl text-black captalize">recently added</h1>
+    <div class="flex">
+      <p class="text-gray-400 font-medium text-xl hover:text-red1 something">30% Offer</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-6 mt-5 auto-rows-[260px]">
+
+    <div class="border flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+      <img src="./img/1-min.png" alt="" width="200px">
+      <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+    <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+    <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+    </div>
+
+    <div class="border  flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+      <img src="./img/2-min-300x300.png" alt="" width="180px">
+      <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+    <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+    <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+    </div>
+
+    <div class="border  flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+      <img src="./img/3-min-300x300.png" alt="" width="200px">
+      <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+    <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+    <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+    </div>
+
+    <div class="border  flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+      <img src="./img/4-min-1-300x300.png" alt="" width="200px">
+      <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+    <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+    <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+    </div>
+
+    <div class="border  flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+      <img src="./img/5-min-300x300.png" alt="" width="200px">
+      <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+    <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+    <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+    </div>
+
+    <div class="border  flex flex-col items-center hover:shadow-md   hover:shadow-gray-300 relative group">
+      <img src="./img/6-min-300x300.jpg" alt="" width="200px">
+      <p class="pt-0 text-black   font-medium  hover:text-blue-900 capitalize">ghoei terminus RF</p>
+    <p class="font-medium text-xl"><span class="text-gray-300">£590.00</span> <span class="text-red1">£350.00</span></p>
+    <div class="absolute top-0 left-0 w-full h-full transition ease-in duration-300 group-hover:bg-wsome "></div>
+    </div>
+
+  </div>
+</div>
+<!-- market news #f9f9f9-->
+ <div class="w-[80%] mx-auto bg-[#f9f9f9] h-[600px]">
+  <div class="mb-5 flex justify-between items-center">
+    <h2>Marketplace News</h2>
+      <button class=" text-red1 py-3 px-6 rounded-[4px] hover:bg-black uppercase font-medium text-[12px]">view all articles</button>
+  </div>
+
+  <div class="grid grid-cols-3 gap-5">
+    <div class="bg-white hover:shadow-lg">
+      <img src="./img/news-4.jpg" alt="">
+      <p class="text-blue-800 text-xl mt-5 ">Electronics</p>
+      <h1 class="text-black font-bold text-2xl capitalize my-6 w-[90%] hover:text-red1">seating collection inspiration is not enough for people</h1>
+      <div class="flex space-x-4 mb-[30px]">
+        <span class="flex space-x-2">
+          <img src="./icon/message-square-svgrepo-com.svg" alt="" width="30px">
+          <span>0</span>
+        </span>
+        <span class="flex space-x-2">
+          <img src="./icon/clock-svgrepo-com.svg" alt="" width="30px">
+          <span>October 1,2018</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="bg-white hover:shadow-lg">
+      <img src="./img/news-3.jpg" alt="">
+      <p class="text-blue-800 text-xl mt-5 ">Electronics</p>
+      <h1 class="font-bold text-2xl capitalize my-6 w-[90%] hover:text-red1 text-black">seating collection inspiration is not enough for people</h1>
+      <div class="flex space-x-4 mb-[30px]">
+        <span class="flex space-x-2">
+          <img src="./icon/message-square-svgrepo-com.svg" alt="" width="30px">
+          <span>0</span>
+        </span>
+        <span class="flex space-x-2">
+          <img src="./icon/clock-svgrepo-com.svg" alt="" width="30px">
+          <span>October 1,2018</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="bg-white hover:shadow-lg">
+      <img src="./img/news-2.jpg" alt="">
+      <p class="text-blue-800 text-xl mt-5 ">Electronics</p>
+      <h1 class="font-bold text-2xl capitalize my-6 w-[90%] hover:text-red1 text-black">seating collection inspiration is not enough for people</h1>
+      <div class="flex space-x-4 mb-[30px]">
+        <span class="flex space-x-2">
+          <img src="./icon/message-square-svgrepo-com.svg" alt="" width="30px">
+          <span>0</span>
+        </span>
+        <span class="flex space-x-2">
+          <img src="./icon/clock-svgrepo-com.svg" alt="" width="30px">
+          <span>October 1,2018</span>
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+ </div>
+<!-- sponsors -->
+<div class="my-[100px] w-[80%] mx-auto grid grid-cols-5">
+
+  <div class="relative group">
+    <a href="">
+      <img src="./img/sponsors_1.png" alt="">
+    </a>
+    <div class="absolute top-0 left-0 w-full h-full bg-wsome group-hover:bg-transparent"></div>
+  </div>
+
+  <div class="relative group">
+    <a href="">
+      <img src="./img/sponsors_2.png" alt="">
+    </a>
+    <div class="absolute top-0 left-0 w-full h-full bg-wsome group-hover:bg-transparent"></div>
+  </div>
+
+  <div class="relative group">
+    <a href="">
+      <img src="./img/sponsors_3.png" alt="">
+    </a>
+    <div class="absolute top-0 left-0 w-full h-full bg-wsome group-hover:bg-transparent"></div>
+  </div>
+
+  <div class="relative group">
+    <a href="">
+      <img src="./img/sponsors_4.png" alt="">
+    </a>
+    <div class="absolute top-0 left-0 w-full h-full bg-wsome group-hover:bg-transparent"></div>
+  </div>
+
+  <div class="relative group">
+    <a href="">
+      <img src="./img/sponsors_5.png" alt="">
+    </a>
+    <div class="absolute top-0 left-0 w-full h-full bg-wsome group-hover:bg-transparent"></div>
+  </div>
+
+</div>
+<!-- red section -->
+ <div class="mb-[90px] bg-red1 h-[250px] flex justify-center items-center">
+
+  <div class="ml-[40px] w-[80%]  grid grid-cols-2 ">
+    <div class="text-white">
+      <h1 class="font-medium text-2xl capitalize mb-2">newsletter & get updates</h1>
+      <p>Sign up for our newsletter to get up-to-date from us</p>
+    </div>
+    <div class="">
+      <div class="  h-[80%] ">
+        <input type="text" name="" id="" placeholder="enter your mail here" class="placeholder:capitalize  outline-none h-full w-[80%] pl-8  rounded-tl-full rounded-bl-full placeholder:text-sm placeholder:text-gray-500">
+
+        <button class="w-[20%] uppercase bg-[#333e48] text-white h-full px-5 float-right rounded-tr-full rounded-br-full">submit</button></div>
+    </div>
+   </div>
+ </div>
+
+ </main>
+<!-- footer -->
+<footer class="">
+
+  <div class="w-[80%] h-[370px] mx-auto flex gap-5 relative">
+<!-- flex 1 -->
+    <div class="w-[25%] ">
+      <div >
+        <a href="">
+          <img src="./img/part_footer-logo.png" alt="" width="150px">
+        </a>
+      </div>
+      <div class="mt-[50px] mb-5">
+        <p class="text-gray-400 capitalize text-xl">Got Auestion? Call us 24/7</p>
+        <h1 class="text-xl text-black">[80] 1017 197</h1>
+        <h3 class="font-bold   text-gray-600 capitalize">17 princess road, london, greater london NW1 8JR,UK</h3>
+      </div>
+      <div class="text-center p-4 rounded-md bg-red1 text-white hover:bg-black transition ease-in w-[60%] flex space-x-1">
+        <img src="./icon/location-pin-alt-1-svgrepo-com.svg" alt="" width="20px">
+        <span class="capitalize">view on map</span>
+      </div>
+    </div>
+    <!-- flex 2 -->
+     <div class="w-[35%] pl-7">
+      <p class="text-gray-400 capitalize text-xl">we using</p>
+        <h1 class="text-xl text-black">safe payments</h1>
+
+        <h4 class="text-black text-xl mt-10">
+          Secured by:
+        </h4>
+     </div>
+    <!-- flex 3 -->
+     <div class="w-[20%] ">
+      <h1  class="text-xl text-black capitalize font-medium ">our stores</h1>
+      <ul>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">new york</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">london SF</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">cockfosters BP</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">los angeles</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">chicago</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">las vegas</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">albato</a></li>
+      </ul>
+     </div>
+    <!-- flex 4 -->
+    <div class="w-[20%] ">
+      <h1  class="text-xl text-black capitalize font-medium ">quick links</h1>
+      <ul>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">support center</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">term & conditions</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">shipping</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">privacy policy</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">\help</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">products return</a></li>
+        <li class="mt-5 text-gray-400 capitalize text-sm"><a href="" class="hover:text-blue-800">FAQS</a></li>
+      </ul>
+     </div>
+    <!-- ab-->
+    <div class="text-center p-3 rounded-md bg-red1 text-white hover:bg-black transition ease-in w-[150px]  text-lg  absolute right-[-50px] top-[50%] -rotate-90" >
+      <a href="#top" class="hover:text-white flex space-x-1 justify-center">
+        <span class="capitalize">back top</span>
+      <img src="./icon/arrow-right-svgrepo-com.svg" alt="" width="20px">
+      </a>
+    </div>  
+  </div>
+  <!-- c -->
+   <div class="bg-gray-200 h-[100px] flex items-center pl-[100px]">
+    <p class="capitalize text-gray-500">copyright by xpeedstudio - 2018</p>
+   </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
